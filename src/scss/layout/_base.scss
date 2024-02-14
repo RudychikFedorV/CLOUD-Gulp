@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: var(--font-family);
+  background: rgb(230, 230, 230);
+}
+.wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
+  background: rgb(103, 143, 242);
+}
+.container {
+  max-width: 1170px;
+  margin-inline: auto;
+}
+.main {
+  padding: 20px;
+}
