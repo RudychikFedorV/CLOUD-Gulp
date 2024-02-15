@@ -1,9 +1,3 @@
-// breakpoints
-$desktop-small: 1200px;
-$tablet: 992px;
-$tablet-small: 768px;
-$mobile: 576px;
-
 :root {
   --font-family: "Roboto", sans-serif;
   --transition: 0.2s all ease-in-out;
@@ -17,6 +11,7 @@ $mobile: 576px;
   --ff-16-500: 500 16px / normal var(--font-family);
 
   --ff-120-700: 700 120px / normal var(--font-family);
+  --ff-80-700: 700 80px / normal var(--font-family);
   --ff-16-700: 700 16px / normal var(--font-family);
 }
 

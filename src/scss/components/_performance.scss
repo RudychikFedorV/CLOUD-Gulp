@@ -1,110 +1,136 @@
 .performance {
-  padding-top: 154px;
-  padding-bottom: 63px;
+  padding: 154px 20px 63px 20px;
 
-  .performance-block {
-    position: relative;
+  &__container {
     margin-bottom: 94px;
+    position: relative;
     z-index: 1;
-
-    &__title {
-      font: var(--ff-120-700);
-      line-height: 100%;
-      color: $text-black;
-    }
-    &__btn {
-      display: inline-block;
-      font: var(--ff-28-500);
-      color: $text-white;
-      position: absolute;
-      bottom: 15px;
-      right: 0;
-    }
-    .btn {
-      padding: 22px;
-      border-radius: 90px;
-      background: $text-black;
-      transition: var(--transition);
-      &:hover {
-        background: lighten($text-black, 15%);
-      }
-    }
-    &__scroll {
-      position: absolute;
-      font: var(--ff-16-500);
-      line-height: 187%;
-      color: $text-white;
-      transform: rotate(90deg);
-      left: -219px;
-      bottom: -75px;
-    }
-	&::after {
-        @include pseudo-element;
-        width: 1px;
-        height: 75px;
-        background: $background-before;
-        transform: rotate(180deg);
-        left: -177px;
-        bottom: -190px;
-      }
-    &__cloud {
-      position: absolute;
-      z-index: -1;
-      width: 1346px;
-      height: 482px;
-      top: -80px;
-      left: -219px;
+    @include desktop {
+      margin-bottom: 150px;
     }
   }
+  &__block-title {
+    max-width: 930px;
+    font: var(--ff-120-700);
+    line-height: 100%;
+    color: $text-black;
+    margin-inline: auto;
 
-  .performance-section {
+    @include tablet {
+      font: var(--ff-80-700);
+      text-align: center;
+    }
+  }
+  &__block-btn {
+    display: inline-block;
+    font: var(--ff-28-500);
+    color: $text-white;
+    position: absolute;
+    bottom: 22px;
+    right: 200px;
+
+    @include desktop {
+      bottom: -122px;
+      left: 255px;
+      max-width: 379px;
+      margin-bottom: 20px;
+      
+    }
+    @include tablet {
+      font: var(--ff-16-500);
+      max-width: 240px;
+    }
+  }
+  .btn {
+    display: inline-block;
+    padding: 22px;
+    border-radius: 90px;
+    background: $text-black;
+    transition: var(--transition);
+    &:hover {
+      background: lighten($text-black, 15%);
+    }
+  }
+  &__block-content {
+    position: relative;
+
+    &::after {
+      @include pseudo-element;
+      width: 2px;
+      height: 75px;
+      background: $background-before;
+      transform: rotate(90deg);
+      left: 150px;
+      bottom: -30px;
+    }
+  }
+  &__block-scroll {
+    display: inline-block;
+    font: var(--ff-16-500);
+    line-height: 187%;
+    color: $text-white;
+    transform: rotate(90deg);
+    bottom: -120px;
+    position: absolute;
+  }
+
+  &__block-cloud {
+    position: absolute;
+    z-index: -1;
+    // width: 1346px;
+    // height: 482px;
+    // top: -80px;
+    // left: -219px;
+  }
+
+  &__section {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  &__section-img {
+    max-width: 126px;
+    max-height: 198px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  &__section-info {
+    max-width: 683px;
+    padding: 13px 13px 13px 50px;
+    display: flex;
+    backdrop-filter: blur(40px);
+    background: $background-info;
+    border-radius: 20px;
+    gap: 30px;
+    margin-left: -45px;
+    position: relative;
+    z-index: 1;
 
-    &__img {
-      max-width: 126px;
-      max-height: 198px;
-      cursor: pointer;
-      z-index: 1;
+    &::before {
+      @include pseudo-element;
+      width: 1px;
+      height: 68px;
+      background: $background-before;
+      right: 118px;
+      bottom: 0;
     }
-    &__info {
-      max-width: 683px;
-      padding: 13px 13px 13px 50px;
-      display: flex;
-      backdrop-filter: blur(40px);
-      background: $background-info;
-      border-radius: 20px;
-      gap: 30px;
-      margin-left: -45px;
-      position: relative;
+  }
+  &__section-desc {
+    font: var(--ff-14-400);
+    line-height: 100%;
+    color: $text-black;
+  }
 
-      &::before {
-        @include pseudo-element;
-        width: 1px;
-        height: 68px;
-        background: $background-before;
-        right: 118px;
-        bottom: 0;
-      }
-    }
-    &__desc {
-      font: var(--ff-14-400);
-      line-height: 100%;
-      color: $text-black;
-    }
+  &__section-btn {
+    display: flex;
+    align-items: center;
+    font: var(--ff-25-400);
+    line-height: 56%;
+    color: $text-black;
+    transition: var(--transition);
 
-    &__btn {
-      display: flex;
-      align-items: center;
-      font: var(--ff-25-400);
-      line-height: 56%;
-      color: $text-black;
-      transition: var(--transition);
-
-      &:hover {
-        color: $text-white;
-      }
+    &:hover {
+      color: $text-white;
     }
   }
 }
