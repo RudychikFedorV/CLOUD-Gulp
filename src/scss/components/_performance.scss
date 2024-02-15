@@ -1,0 +1,110 @@
+.performance {
+  padding-top: 154px;
+  padding-bottom: 63px;
+
+  .performance-block {
+    position: relative;
+    margin-bottom: 94px;
+    z-index: 1;
+
+    &__title {
+      font: var(--ff-120-700);
+      line-height: 100%;
+      color: $text-black;
+    }
+    &__btn {
+      display: inline-block;
+      font: var(--ff-28-500);
+      color: $text-white;
+      position: absolute;
+      bottom: 15px;
+      right: 0;
+    }
+    .btn {
+      padding: 22px;
+      border-radius: 90px;
+      background: $text-black;
+      transition: var(--transition);
+      &:hover {
+        background: lighten($text-black, 15%);
+      }
+    }
+    &__scroll {
+      position: absolute;
+      font: var(--ff-16-500);
+      line-height: 187%;
+      color: $text-white;
+      transform: rotate(90deg);
+      left: -219px;
+      bottom: -75px;
+    }
+	&::after {
+        @include pseudo-element;
+        width: 1px;
+        height: 75px;
+        background: $background-before;
+        transform: rotate(180deg);
+        left: -177px;
+        bottom: -190px;
+      }
+    &__cloud {
+      position: absolute;
+      z-index: -1;
+      width: 1346px;
+      height: 482px;
+      top: -80px;
+      left: -219px;
+    }
+  }
+
+  .performance-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      max-width: 126px;
+      max-height: 198px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    &__info {
+      max-width: 683px;
+      padding: 13px 13px 13px 50px;
+      display: flex;
+      backdrop-filter: blur(40px);
+      background: $background-info;
+      border-radius: 20px;
+      gap: 30px;
+      margin-left: -45px;
+      position: relative;
+
+      &::before {
+        @include pseudo-element;
+        width: 1px;
+        height: 68px;
+        background: $background-before;
+        right: 118px;
+        bottom: 0;
+      }
+    }
+    &__desc {
+      font: var(--ff-14-400);
+      line-height: 100%;
+      color: $text-black;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      font: var(--ff-25-400);
+      line-height: 56%;
+      color: $text-black;
+      transition: var(--transition);
+
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+}

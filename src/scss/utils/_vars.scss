@@ -5,15 +5,24 @@ $tablet-small: 768px;
 $mobile: 576px;
 
 :root {
-	--font-family: "Roboto", sans-serif;
-	--transition: .2s all ease-in-out;
+  --font-family: "Roboto", sans-serif;
+  --transition: 0.2s all ease-in-out;
 
-	--ff-25-500: 500 25px / normal var(--font-family);
-	--ff-22-400: 400 22px / normal var(--font-family);
-	--ff-16-700: 700 16px / normal var(--font-family);
+  --ff-25-400: 400 25px / normal var(--font-family);
+  --ff-22-400: 400 22px / normal var(--font-family);
+  --ff-14-400: 400 14px / normal var(--font-family);
 
-	--c-primary: #0b8fed;
-	--c-text-white: #fff;
-	--c-border: #FFFFFF;
-	--c-text-black:#000000;
+  --ff-28-500: 500 28px / normal var(--font-family);
+  --ff-25-500: 500 25px / normal var(--font-family);
+  --ff-16-500: 500 16px / normal var(--font-family);
+
+  --ff-120-700: 700 120px / normal var(--font-family);
+  --ff-16-700: 700 16px / normal var(--font-family);
 }
+
+$text-black: #000;
+$primary: #0b8fed;
+$text-white: #fff;
+$border: #ffffff;
+$background-before: rgba(255, 255, 255, 0.5);
+$background-info: rgba(255, 255, 255, 0.1);
