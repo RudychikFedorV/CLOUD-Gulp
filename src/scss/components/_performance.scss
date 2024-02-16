@@ -1,14 +1,12 @@
 .performance {
   padding: 154px 20px 63px 20px;
 
-  &__container {
+  &__block {
     margin-bottom: 94px;
     position: relative;
     z-index: 1;
-    @include desktop {
-      margin-bottom: 150px;
-    }
   }
+
   &__block-title {
     max-width: 930px;
     font: var(--ff-120-700);
@@ -21,24 +19,30 @@
       text-align: center;
     }
   }
+  &__block-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @include tablet-small {
+      flex-wrap: wrap;
+    }
+  }
+  &__block-text {
+    font: var(--ff-120-700);
+    line-height: 100%;
+    color: $text-black;
+
+    @include tablet {
+      font: var(--ff-80-700);
+    }
+  }
   &__block-btn {
     display: inline-block;
     font: var(--ff-28-500);
     color: $text-white;
-    position: absolute;
-    bottom: 22px;
-    right: 200px;
-
-    @include desktop {
-      bottom: -122px;
-      left: 255px;
-      max-width: 379px;
-      margin-bottom: 20px;
-      
-    }
     @include tablet {
-      font: var(--ff-16-500);
-      max-width: 240px;
+      font: var(--ff-25-500);
     }
   }
   .btn {
@@ -71,16 +75,13 @@
     color: $text-white;
     transform: rotate(90deg);
     bottom: -120px;
+    left: -40px;
     position: absolute;
   }
 
   &__block-cloud {
     position: absolute;
     z-index: -1;
-    // width: 1346px;
-    // height: 482px;
-    // top: -80px;
-    // left: -219px;
   }
 
   &__section {
