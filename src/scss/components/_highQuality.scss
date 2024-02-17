@@ -13,6 +13,10 @@
   }
   &__block-title {
     margin-bottom: 50px;
+    @include mobile {
+      text-align: center;
+      font: var(--ff-40-400);
+    }
   }
 
   &__img {
