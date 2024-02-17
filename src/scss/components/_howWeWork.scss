@@ -8,9 +8,6 @@
   }
   &__title {
     @include f-c-c;
-    font: var(--ff-60-400);
-    line-height: 50%;
-    color: $text-white;
     margin-bottom: 81px;
     @include tablet-small {
       font: var(--ff-40-400);

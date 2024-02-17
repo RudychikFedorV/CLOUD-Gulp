@@ -1,0 +1,28 @@
+.highQuality {
+  padding: 144px 127px 10px 127px;
+  display: flex;
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include tablet-small {
+    padding: 100px 60px 10px 60px;
+  }
+  @include mobile {
+    padding: 80px 20px 10px 20px;
+  }
+  &__block-title {
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    max-width: 621px;
+    cursor: pointer;
+    margin-left: -40px;
+
+    @include tablet {
+      padding-top: 40px;
+      margin-left: 0;
+    }
+  }
+}
