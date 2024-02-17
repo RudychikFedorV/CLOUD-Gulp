@@ -43,3 +43,13 @@ $mobile: 576px;
   border-radius: 50%;
   z-index: -1;
 }
+@mixin f-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin f-s-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

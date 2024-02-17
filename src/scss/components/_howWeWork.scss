@@ -1,0 +1,60 @@
+.howWeWork {
+  border-bottom: 1px solid $border;
+  @include tablet {
+    padding: 0 20px;
+  }
+  &__title {
+    @include f-c-c;
+    font: var(--ff-60-400);
+    line-height: 50%;
+    color: $text-white;
+    margin-bottom: 81px;
+    @include tablet-small {
+      font: var(--ff-40-400);
+      margin-bottom: 41px;
+    }
+  }
+  &__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    row-gap: 68px;
+    margin-bottom: 185px;
+    @include tablet {
+        margin-bottom: 85px;
+      }
+    @include tablet-small {
+      row-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__section-slide {
+    border-radius: 20px;
+    padding: 26px 11px 18px 11px;
+    @include f-c-c;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    background: $background-info;
+  }
+  &__section-img {
+    margin-bottom: 11px;
+    cursor: pointer;
+  }
+
+  &__section-desc {
+    font: var(--ff-18-500);
+    line-height: 100%;
+    color: $text-black;
+    margin-bottom: 15px;
+  }
+  &__section-info {
+    font: var(--ff-16-300);
+    line-height: 112%;
+    text-align: center;
+    color: $text-black;
+  }
+}
