@@ -1,0 +1,45 @@
+.individualApproach {
+  padding: 144px 127px 10px 127px;
+  display: flex;
+  border-bottom: 1px solid $border;
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include tablet-small {
+    padding: 100px 60px 10px 60px;
+  }
+  @include mobile {
+    padding: 80px 20px 10px 20px;
+  }
+  &__block-title {
+    padding-top: 300px;
+    margin-right: -100px;
+    margin-bottom: 50px;
+    @include desktop-small {
+      margin-right: -100px;
+    }
+
+    @include mobile {
+      text-align: center;
+      font: var(--ff-40-400);
+      margin-right: 0;
+      padding-top: 0;
+    }
+  }
+
+  &__img {
+    max-width: 621px;
+    cursor: pointer;
+    @include desktop-small {
+      margin-right: -100px;
+    }
+
+    @include tablet {
+      padding-top: 40px;
+    }
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+}
