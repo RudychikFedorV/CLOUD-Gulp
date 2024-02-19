@@ -1,0 +1,46 @@
+.ourExperience {
+  padding: 200px 136px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 90px;
+    margin-inline: auto;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__section-block {
+    @include f-c-c;
+    flex-direction: column;
+    max-width: 323px;
+  }
+  &__section-desc {
+    font: var(--ff-23-400);
+    line-height: 130%;
+    text-align: center;
+    color: $text-white;
+    backdrop-filter: blur(40px);
+    background: $background-info;
+    height: 81px;
+    border-radius: 20px;
+
+  }
+  .our-1 {
+    padding: 28px 29px 23px 29px;
+  }
+  .our-2 {
+    padding: 16px 47px 11px 45px;
+  }
+  .our-3 {
+    padding: 28px 22px 25px 20px;
+  }
+  &__section-img {
+    max-width: 323px;
+    height: 215px;
+    
+  }
+}
