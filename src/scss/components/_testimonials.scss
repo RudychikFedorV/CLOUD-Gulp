@@ -1,0 +1,16 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+
+  &__title {
+    @include tablet-small {
+      font: var(--ff-50-400);
+    }
+    @include mobile {
+      font: var(--ff-40-400);
+    }
+  }
+  .swiper-pagination-bullet {
+    background: $text-white;
+  }
+}
