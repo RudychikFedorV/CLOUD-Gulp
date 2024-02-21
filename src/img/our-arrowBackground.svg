@@ -1,0 +1,16 @@
+<svg width="171.064026" height="110.697266" viewBox="0 0 171.064 110.697" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_253_21_dd" x="0.000000" y="0.000000" width="171.064026" height="110.697266" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="13.3333"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_253_21_dd)">
+		<rect id="Rectangle 7" x="9.862366" y="-2.414795" rx="20.000000" width="165.000000" height="95.000000" transform="rotate(7.42524 9.862366 -2.414795)" fill="#FFFFFF" fill-opacity="1.000000"/>
+	</g>
+</svg>

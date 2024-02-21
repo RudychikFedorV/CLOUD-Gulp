@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>CLOUD FLEX</title>
+	<link rel="icon" href="img/favicon.png" type="image/png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -284,7 +285,7 @@
 </section>
 		<section class="alwaysInTouch">
     <div class="alwaysInTouch__img">
-        <img src="img/phone.png" alt="Laptop">
+        <img src="img/phone.png" alt="Phone">
     </div>
     <div class="alwaysInTouch__block">
         <div class="h3-title alwaysInTouch__block-title">Always in touch</div>
@@ -320,24 +321,36 @@
                 <img src="img/our-1.png" alt="Serverless Live Streaming">
             </div>
             <div class="ourExperience__section-btn">
+                <img src="img/our-arrowBackground.svg" alt="Arrow Background"
+                    class="ourExperience__section-arrowBackground">
+                <img src="img/our-arrow.svg" alt="Arrow" class="ourExperience__section-arrow">
             </div>
         </div>
 
         <div class="ourExperience__section-block">
-            <div class="ourExperience__section-desc our-2">Learn about CloudFlex
-                team cases</div>
+            <div class="ourExperience__section-desc our-2">
+                Learn about CloudFlex team cases
+            </div>
             <div class="ourExperience__section-img">
                 <img src="img/our-2.png" alt="Learn about CloudFlex
                 team cases">
             </div>
-            <div class="ourExperience__section-btn"></div>
+            <div class="ourExperience__section-btn">
+                <img src="img/our-arrowBackground.svg" alt="Arrow Background"
+                    class="ourExperience__section-arrowBackground">
+                <img src="img/our-arrow.svg" alt="Arrow" class="ourExperience__section-arrow">
+            </div>
         </div>
         <div class="ourExperience__section-block">
             <div class="ourExperience__section-desc our-3">Live streaming from mobile</div>
             <div class="ourExperience__section-img">
                 <img src="img/our-3.png" alt="Live streaming from mobile">
             </div>
-            <div class="ourExperience__section-btn"></div>
+            <div class="ourExperience__section-btn">
+                <img src="img/our-arrowBackground.svg" alt="Arrow Background"
+                    class="ourExperience__section-arrowBackground">
+                <img src="img/our-arrow.svg" alt="Arrow" class="ourExperience__section-arrow">
+            </div>
         </div>
 
     </div>
@@ -354,6 +367,9 @@
 			document.getElementById("headerUl").classList.toggle("_active");
 			document.getElementById("headerBackdrop").classList.toggle("_active");
 		}
+		
+		document.querySelector('.icon').addEventListener('click', function()
+		{this.classList.toggle("icon--active")});
 	</script>
 	
 </body>
