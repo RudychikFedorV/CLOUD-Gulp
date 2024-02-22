@@ -1,0 +1,56 @@
+.form {
+  @include f-c-c;
+  flex-direction: column;
+  gap: 23px;
+  padding: 0 20px;
+
+  &__title {
+    font: var(--ff-36-400);
+    color: $text-black;
+    margin-bottom: 12px;
+    @include mobile {
+      text-align: center;
+      font: var(--ff-25-400);
+    }
+  }
+  &__input {
+    max-width: 622px;
+    width: 100%;
+    border-radius: 20px;
+    background: $border;
+    padding-right: 14px;
+  }
+  input {
+    width: 100%;
+    padding: 9px 23px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: $text-black;
+    font: var(--ff-25-400);
+
+    &::placeholder {
+      color: $color-placeholder;
+      @include mobile {
+        font: var(--ff-19-400);
+      }
+    }
+  }
+  &__btn {
+    @include f-c-c;
+    max-width: 622px;
+    width: 100%;
+    font: var(--ff-25-500);
+    line-height: 120%;
+    border: 1px solid $text-black;
+    a {
+      color: $text-white;
+    }
+  }
+  .btn {
+    background: $text-black;
+    border-radius: 20px;
+    padding: 9px 23px;
+    cursor: pointer;
+  }
+}

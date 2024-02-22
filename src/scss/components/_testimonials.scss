@@ -1,8 +1,12 @@
 .testimonials {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 300px;
+  padding-left: 20px;
 
   &__title {
+    margin-bottom: 95px;
+    margin-inline: auto;
     @include tablet-small {
       font: var(--ff-50-400);
     }
@@ -12,5 +16,28 @@
   }
   .swiper-pagination-bullet {
     background: $text-white;
+  }
+  .swiper-wrapper {
+    gap: 20px;
+  }
+  .swiperSlide {
+    &__background {
+      position: relative;
+    }
+    &__avatar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 40px 0 0 40px;
+    }
+    &__desc {
+      position: absolute;
+      max-width: 400px;
+      margin: 0 45px 0 30px;
+      top: 120px;
+      font: var(--ff-22-400);
+      line-height: 130%;
+      color: $text-white;
+    }
   }
 }
