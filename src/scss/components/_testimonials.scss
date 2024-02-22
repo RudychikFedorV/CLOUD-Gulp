@@ -1,8 +1,12 @@
 .testimonials {
   display: flex;
   flex-direction: column;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
   padding-left: 20px;
+
+  @include mobile {
+    margin-bottom: 100px;
+  }
 
   &__title {
     margin-bottom: 95px;
@@ -11,24 +15,35 @@
       font: var(--ff-50-400);
     }
     @include mobile {
+      margin-bottom: 45px;
       font: var(--ff-40-400);
     }
   }
   .swiper-pagination-bullet {
     background: $text-white;
   }
+  .swiper-button {
+    @include mobile {
+      display: none;
+    }
+  }
   .swiper-wrapper {
     gap: 20px;
   }
   .swiperSlide {
+    @include f-c-c;
     &__background {
       position: relative;
     }
     &__avatar {
+      width: 496px;
       position: absolute;
       top: 0;
-      left: 0;
       margin: 40px 0 0 40px;
+
+      @include mobile {
+        margin: 20px 0 0 100px;
+      }
     }
     &__desc {
       position: absolute;
@@ -38,6 +53,11 @@
       font: var(--ff-22-400);
       line-height: 130%;
       color: $text-white;
+      @include mobile {
+        margin: 0 25px 0 30px;
+        top: 70px;
+        font: var(--ff-19-400);
+      }
     }
   }
 }
